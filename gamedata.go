@@ -18,6 +18,7 @@ func NewGameData(number string) *GameData {
 }
 
 func (gd *GameData) NewTurn(number string) (string, bool) {
+	gd.turns = append(gd.turns, number)
 	res := ""
 	solved := 0
 	for i := 0; i < 4; i++ {
