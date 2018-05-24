@@ -37,3 +37,5 @@ func (gd *GameData) NewTurn(number string) (string, bool) {
 	}
 	return res, false
 }
+
+func (gd *GameData) GetNumberOfTurns() int { return len(gd.turns) }
